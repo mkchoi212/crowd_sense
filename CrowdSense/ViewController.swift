@@ -28,22 +28,17 @@ class ViewController: UIViewController, FrameExtractorDelegate {
   var counter : Int!
   var recording : Bool!
   var histogram : [String:Int]! = ["😁": 1, "☺️": 5, "😮": 10]
-  enum tally {
-    case angry
-    case disgusted
-    case fear
-    case sadness
-    case neutral
-    case content
-    case surprised
-    case happiness
-  }
+  
+ let emotions = ["angry", "disgusted", "fear" ,"sadness", "neutral", "content", "surprised", "happiness"]
   
   @IBOutlet var previewView: UIView!
   @IBOutlet var scoreView: UIView!
   @IBOutlet weak var confidenceLabel: UILabel!
   @IBOutlet weak var emojiLabel: UILabel!
   @IBOutlet weak var ppButton: UIButton!
+  @IBOutlet weak var statusIcon: UIView!
+  
+  var curIdx: Int!
   
   override var prefersStatusBarHidden: Bool {
     return true
@@ -96,9 +91,13 @@ class ViewController: UIViewController, FrameExtractorDelegate {
     
     counter = 0
     recording = false
+    curIdx = 4
     
     frameExtractor = FrameExtractor(on: previewView)
     frameExtractor.delegate = self
+    
+    self.statusIcon.layer.cornerRadius = 25.0
+    self.statusIcon.clipsToBounds = true
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -115,8 +114,7 @@ class ViewController: UIViewController, FrameExtractorDelegate {
       counter = 1
       emotionAPICall(image, k: 0.8)
     }
-    // if ()
-    self.signalLabel.backgroundColor = UIColor.green
+    
   }
   
   func emotionAPICall(_ image: UIImage, k: Double) {
@@ -128,14 +126,29 @@ class ViewController: UIViewController, FrameExtractorDelegate {
       switch response.result {
       case .success(let data):
         let emotionDict = createEmotionDict(json: JSON(data))
-        let message = processDict(emotionDict)
+        let data = processDict(emotionDict)
+        let message = data.0
+        let des = data.1
         
         if(message.1 == 0.0 && k > 0.5) {
           self.emotionAPICall(image, k: k - 0.1)
         } else {
           self.emojiLabel.text = message.0
           self.confidenceLabel.text = "\(message.1 * 100.0)%"
-          if let _ = self.histogram[message.0] {
+          
+          let newIdx = self.emotions.index { $0 == des }
+          let newAmnt = self.emotions.distance(from: 0, to: newIdx!)
+          
+          if (self.curIdx < newAmnt) {
+            self.statusIcon.backgroundColor = UIColor(rgb: UIColor.GREEN)
+          } else if (self.curIdx > newAmnt) {
+            self.statusIcon.backgroundColor = UIColor(rgb: UIColor.RED)
+          } else {
+            self.statusIcon.backgroundColor = UIColor.yellow
+          }
+          self.curIdx = newIdx
+          
+          if let _ = self.histogram[message.0], message.0 != "-"  {
             self.histogram[message.0] = self.histogram[message.0]! + 1
           } else {
             self.histogram[message.0] = 1

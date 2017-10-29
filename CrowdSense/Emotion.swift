@@ -40,7 +40,7 @@ func createEmotionDict(json: JSON) -> [String:[Float]] {
   return emotionDict
 }
 
-func processDict(_ emotionDict: [String:[Float]]) -> (String, Float) {
+func processDict(_ emotionDict: [String:[Float]]) -> ((String, Float), String) {
   var average = Dictionary<String, Float>()
   
   for (emotion, arr) in emotionDict {
@@ -48,7 +48,7 @@ func processDict(_ emotionDict: [String:[Float]]) -> (String, Float) {
     average[emotion] = arr.reduce(0, +) / Float(cnt)
   }
   
-  guard let emotion = average.max(by: {$0.1 < $1.1}) else { return ("-", 0.00) }
+  guard let emotion = average.max(by: {$0.1 < $1.1}) else { return (("-", 0.00), "neutral") }
   let des = emotion.0
   let val = emotion.1
   
@@ -63,5 +63,5 @@ func processDict(_ emotionDict: [String:[Float]]) -> (String, Float) {
     emoji = e_array[2]
   }
   
-  return (emoji, val)
+  return ((emoji, val), des)
 }
