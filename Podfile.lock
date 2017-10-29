@@ -1,15 +1,30 @@
 PODS:
   - Alamofire (4.5.0)
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - Charts (from `https://github.com/danielgindi/Charts/`, commit `54171609c2f7d987a46eab60eb0422318d08d266`)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Charts:
+    :commit: 54171609c2f7d987a46eab60eb0422318d08d266
+    :git: https://github.com/danielgindi/Charts/
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 54171609c2f7d987a46eab60eb0422318d08d266
+    :git: https://github.com/danielgindi/Charts/
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Charts: c5f4491efc3a24de9213fe3e68484bfdff881cfb
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 0efe3496c5923a16b46d83e51d7e0c24d1ae41ca
+PODFILE CHECKSUM: 86c2e646b86a5a9791f41f77327208ed70b6f4ed
 
 COCOAPODS: 1.2.1

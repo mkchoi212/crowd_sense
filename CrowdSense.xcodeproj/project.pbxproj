@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA13B05C1FA604A80008FAB1 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13B05B1FA604A80008FAB1 /* ChartViewController.swift */; };
 		CA28A9C51FA56E63009E21BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9C41FA56E63009E21BC /* AppDelegate.swift */; };
 		CA28A9C71FA56E63009E21BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9C61FA56E63009E21BC /* ViewController.swift */; };
 		CA28A9CA1FA56E63009E21BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9C81FA56E63009E21BC /* Main.storyboard */; };
@@ -14,12 +15,15 @@
 		CA28A9CF1FA56E63009E21BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */; };
 		CA28A9D71FA57416009E21BC /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9D61FA57416009E21BC /* FrameExtractor.swift */; };
 		CA2A5C0F1FA5D1B200B5ABE6 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A5C0E1FA5D1B200B5ABE6 /* ImageCropper.swift */; };
+		CA2A5C111FA5DF7A00B5ABE6 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A5C101FA5DF7A00B5ABE6 /* Emotion.swift */; };
+		CA2A5C131FA5E8B800B5ABE6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A5C121FA5E8B800B5ABE6 /* Color.swift */; };
 		F58B7D12C48806125E2E7D53 /* Pods_CrowdSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdSense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A482DD533FE80EA0C9FF52 /* Pods-CrowdSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdSense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense.debug.xcconfig"; sourceTree = "<group>"; };
+		CA13B05B1FA604A80008FAB1 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		CA28A9C11FA56E63009E21BC /* CrowdSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA28A9C41FA56E63009E21BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA28A9C61FA56E63009E21BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,8 @@
 		CA28A9D01FA56E63009E21BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA28A9D61FA57416009E21BC /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		CA2A5C0E1FA5D1B200B5ABE6 /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
+		CA2A5C101FA5DF7A00B5ABE6 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		CA2A5C121FA5E8B800B5ABE6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F0B868A3E044389494001A79 /* Pods-CrowdSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdSense.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +73,10 @@
 			children = (
 				CA28A9C41FA56E63009E21BC /* AppDelegate.swift */,
 				CA28A9C61FA56E63009E21BC /* ViewController.swift */,
+				CA13B05B1FA604A80008FAB1 /* ChartViewController.swift */,
 				CA28A9D61FA57416009E21BC /* FrameExtractor.swift */,
+				CA2A5C101FA5DF7A00B5ABE6 /* Emotion.swift */,
+				CA2A5C121FA5E8B800B5ABE6 /* Color.swift */,
 				CA28A9C81FA56E63009E21BC /* Main.storyboard */,
 				CA28A9CB1FA56E63009E21BC /* Assets.xcassets */,
 				CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */,
@@ -218,9 +227,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA28A9D71FA57416009E21BC /* FrameExtractor.swift in Sources */,
+				CA13B05C1FA604A80008FAB1 /* ChartViewController.swift in Sources */,
+				CA2A5C111FA5DF7A00B5ABE6 /* Emotion.swift in Sources */,
 				CA28A9C71FA56E63009E21BC /* ViewController.swift in Sources */,
 				CA28A9C51FA56E63009E21BC /* AppDelegate.swift in Sources */,
 				CA2A5C0F1FA5D1B200B5ABE6 /* ImageCropper.swift in Sources */,
+				CA2A5C131FA5E8B800B5ABE6 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

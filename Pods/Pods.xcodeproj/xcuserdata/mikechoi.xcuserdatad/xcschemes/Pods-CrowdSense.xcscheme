@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "538FBA16766ABE304183F908D8617DA9"
+               BlueprintIdentifier = "2A5A91FCD2919B6B3D9FA74360A02A9B"
                BuildableName = "Pods_CrowdSense.framework"
                BlueprintName = "Pods-CrowdSense"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "538FBA16766ABE304183F908D8617DA9"
+            BlueprintIdentifier = "2A5A91FCD2919B6B3D9FA74360A02A9B"
             BuildableName = "Pods_CrowdSense.framework"
             BlueprintName = "Pods-CrowdSense"
             ReferencedContainer = "container:Pods.xcodeproj">
