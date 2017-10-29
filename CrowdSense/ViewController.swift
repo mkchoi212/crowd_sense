@@ -9,26 +9,36 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FrameExtractorDelegate {
   let emotionsURL = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize"
-  let header = ["Ocp-Apim-Subscription-Key": "fb09fdf4c5764183bd31f73e03de5099", "Content-Type": "application/json"]
-  let p2  = ["url": "http://ww2.hdnux.com/photos/17/51/15/4100937/5/1024x1024.jpg"]
+  let header = ["Ocp-Apim-Subscription-Key": "fb09fdf4c5764183bd31f73e03de5099", "Content-Type": "application/octet-stream"]
+  let params  = ["url": "http://ww2.hdnux.com/photos/17/51/15/4100937/5/1024x1024.jpg"]
+  var frameExtractor: FrameExtractor!
+  var counter : Int!
+  
+  @IBOutlet var previewView: UIView!
+  @IBOutlet weak var statusLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    Alamofire.request(emotionsURL, method: .post, parameters: p2, encoding: JSONEncoding.default, headers: header).responseJSON { response in
-      if let json = response.result.value {
-        print(json)
-      }
-    }
+    counter = 0
+    frameExtractor = FrameExtractor(on: previewView)
+    frameExtractor.delegate = self
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  func captured(image: UIImage) {
+    
+//    Alamofire.request(emotionsURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: header).responseJSON { response in
+//       switch response.result {
+//       case .success(let json):
+//        print(json)
+//        break
+//       case .failure(let error):
+//        print(error)
+//        break
+//      }
+//    }
   }
-
-
 }
 
