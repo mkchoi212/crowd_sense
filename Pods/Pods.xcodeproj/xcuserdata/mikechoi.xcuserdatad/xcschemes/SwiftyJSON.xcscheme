@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "538FBA16766ABE304183F908D8617DA9"
-               BuildableName = "Pods_CrowdSense.framework"
-               BlueprintName = "Pods-CrowdSense"
+               BlueprintIdentifier = "94E4AAA406E4C20AB1B91E38885FA08D"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "538FBA16766ABE304183F908D8617DA9"
-            BuildableName = "Pods_CrowdSense.framework"
-            BlueprintName = "Pods-CrowdSense"
+            BlueprintIdentifier = "94E4AAA406E4C20AB1B91E38885FA08D"
+            BuildableName = "SwiftyJSON.framework"
+            BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
