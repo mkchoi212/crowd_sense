@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA28A9C51FA56E63009E21BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9C41FA56E63009E21BC /* AppDelegate.swift */; };
+		CA28A9C71FA56E63009E21BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9C61FA56E63009E21BC /* ViewController.swift */; };
+		CA28A9CA1FA56E63009E21BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9C81FA56E63009E21BC /* Main.storyboard */; };
+		CA28A9CC1FA56E63009E21BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9CB1FA56E63009E21BC /* Assets.xcassets */; };
+		CA28A9CF1FA56E63009E21BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */; };
+		F58B7D12C48806125E2E7D53 /* Pods_CrowdSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdSense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A482DD533FE80EA0C9FF52 /* Pods-CrowdSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdSense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense.debug.xcconfig"; sourceTree = "<group>"; };
+		CA28A9C11FA56E63009E21BC /* CrowdSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA28A9C41FA56E63009E21BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA28A9C61FA56E63009E21BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA28A9C91FA56E63009E21BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA28A9CB1FA56E63009E21BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA28A9CE1FA56E63009E21BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA28A9D01FA56E63009E21BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B868A3E044389494001A79 /* Pods-CrowdSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdSense.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA28A9BE1FA56E63009E21BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58B7D12C48806125E2E7D53 /* Pods_CrowdSense.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA28A9B81FA56E63009E21BC = {
+			isa = PBXGroup;
+			children = (
+				CA28A9C31FA56E63009E21BC /* CrowdSense */,
+				CA28A9C21FA56E63009E21BC /* Products */,
+				F53075AE19B2834E72BE1CD0 /* Pods */,
+				CD58A206A8FDA6F00D6AF860 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA28A9C21FA56E63009E21BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA28A9C11FA56E63009E21BC /* CrowdSense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA28A9C31FA56E63009E21BC /* CrowdSense */ = {
+			isa = PBXGroup;
+			children = (
+				CA28A9C41FA56E63009E21BC /* AppDelegate.swift */,
+				CA28A9C61FA56E63009E21BC /* ViewController.swift */,
+				CA28A9C81FA56E63009E21BC /* Main.storyboard */,
+				CA28A9CB1FA56E63009E21BC /* Assets.xcassets */,
+				CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */,
+				CA28A9D01FA56E63009E21BC /* Info.plist */,
+			);
+			path = CrowdSense;
+			sourceTree = "<group>";
+		};
+		CD58A206A8FDA6F00D6AF860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53075AE19B2834E72BE1CD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44A482DD533FE80EA0C9FF52 /* Pods-CrowdSense.debug.xcconfig */,
+				F0B868A3E044389494001A79 /* Pods-CrowdSense.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA28A9C01FA56E63009E21BC /* CrowdSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA28A9D31FA56E63009E21BC /* Build configuration list for PBXNativeTarget "CrowdSense" */;
+			buildPhases = (
+				837285E4E39AA8EE79B64C37 /* [CP] Check Pods Manifest.lock */,
+				CA28A9BD1FA56E63009E21BC /* Sources */,
+				CA28A9BE1FA56E63009E21BC /* Frameworks */,
+				CA28A9BF1FA56E63009E21BC /* Resources */,
+				DD5C61184D2724CA52E58E02 /* [CP] Embed Pods Frameworks */,
+				F3F80566833115DAEA61B1F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrowdSense;
+			productName = CrowdSense;
+			productReference = CA28A9C11FA56E63009E21BC /* CrowdSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA28A9B91FA56E63009E21BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Mike Choi";
+				TargetAttributes = {
+					CA28A9C01FA56E63009E21BC = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA28A9BC1FA56E63009E21BC /* Build configuration list for PBXProject "CrowdSense" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA28A9B81FA56E63009E21BC;
+			productRefGroup = CA28A9C21FA56E63009E21BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA28A9C01FA56E63009E21BC /* CrowdSense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA28A9BF1FA56E63009E21BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA28A9CF1FA56E63009E21BC /* LaunchScreen.storyboard in Resources */,
+				CA28A9CC1FA56E63009E21BC /* Assets.xcassets in Resources */,
+				CA28A9CA1FA56E63009E21BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		837285E4E39AA8EE79B64C37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5C61184D2724CA52E58E02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F80566833115DAEA61B1F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA28A9BD1FA56E63009E21BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA28A9C71FA56E63009E21BC /* ViewController.swift in Sources */,
+				CA28A9C51FA56E63009E21BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA28A9C81FA56E63009E21BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA28A9C91FA56E63009E21BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA28A9CE1FA56E63009E21BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA28A9D11FA56E63009E21BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA28A9D21FA56E63009E21BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA28A9D41FA56E63009E21BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A482DD533FE80EA0C9FF52 /* Pods-CrowdSense.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J57M62A98;
+				INFOPLIST_FILE = CrowdSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikechoi.CrowdSense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA28A9D51FA56E63009E21BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B868A3E044389494001A79 /* Pods-CrowdSense.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J57M62A98;
+				INFOPLIST_FILE = CrowdSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikechoi.CrowdSense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA28A9BC1FA56E63009E21BC /* Build configuration list for PBXProject "CrowdSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA28A9D11FA56E63009E21BC /* Debug */,
+				CA28A9D21FA56E63009E21BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA28A9D31FA56E63009E21BC /* Build configuration list for PBXNativeTarget "CrowdSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA28A9D41FA56E63009E21BC /* Debug */,
+				CA28A9D51FA56E63009E21BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA28A9B91FA56E63009E21BC /* Project object */;
+}
