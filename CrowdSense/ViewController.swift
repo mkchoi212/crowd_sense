@@ -18,13 +18,26 @@ enum Confidence {
 }
 
 class ViewController: UIViewController, FrameExtractorDelegate {
-  let emotionsURL = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize"
+    
+    @IBOutlet weak var signalLabel: UILabel!
+    
+    let emotionsURL = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize"
   let header = ["Ocp-Apim-Subscription-Key": "fb09fdf4c5764183bd31f73e03de5099", "Content-Type": "application/octet-stream"]
   
   var frameExtractor: FrameExtractor!
   var counter : Int!
   var recording : Bool!
   var histogram : [String:Int]! = ["😁": 1, "☺️": 5, "😮": 10]
+  enum tally {
+    case angry
+    case disgusted
+    case fear
+    case sadness
+    case neutral
+    case content
+    case surprised
+    case happiness
+  }
   
   @IBOutlet var previewView: UIView!
   @IBOutlet var scoreView: UIView!
@@ -102,6 +115,8 @@ class ViewController: UIViewController, FrameExtractorDelegate {
       counter = 1
       emotionAPICall(image, k: 0.8)
     }
+    // if ()
+    self.signalLabel.backgroundColor = UIColor.green
   }
   
   func emotionAPICall(_ image: UIImage, k: Double) {
