@@ -13,6 +13,7 @@
 		CA28A9CC1FA56E63009E21BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9CB1FA56E63009E21BC /* Assets.xcassets */; };
 		CA28A9CF1FA56E63009E21BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */; };
 		CA28A9D71FA57416009E21BC /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28A9D61FA57416009E21BC /* FrameExtractor.swift */; };
+		CA2A5C0F1FA5D1B200B5ABE6 /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A5C0E1FA5D1B200B5ABE6 /* ImageCropper.swift */; };
 		F58B7D12C48806125E2E7D53 /* Pods_CrowdSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35027A017A9F43160F02EE6F /* Pods_CrowdSense.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		CA28A9CE1FA56E63009E21BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA28A9D01FA56E63009E21BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA28A9D61FA57416009E21BC /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		CA2A5C0E1FA5D1B200B5ABE6 /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
 		F0B868A3E044389494001A79 /* Pods-CrowdSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdSense.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdSense/Pods-CrowdSense.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				CA28A9CB1FA56E63009E21BC /* Assets.xcassets */,
 				CA28A9CD1FA56E63009E21BC /* LaunchScreen.storyboard */,
 				CA28A9D01FA56E63009E21BC /* Info.plist */,
+				CA2A5C0E1FA5D1B200B5ABE6 /* ImageCropper.swift */,
 			);
 			path = CrowdSense;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				CA28A9D71FA57416009E21BC /* FrameExtractor.swift in Sources */,
 				CA28A9C71FA56E63009E21BC /* ViewController.swift in Sources */,
 				CA28A9C51FA56E63009E21BC /* AppDelegate.swift in Sources */,
+				CA2A5C0F1FA5D1B200B5ABE6 /* ImageCropper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

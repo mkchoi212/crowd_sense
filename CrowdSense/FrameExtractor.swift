@@ -76,6 +76,10 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     guard connection.isVideoMirroringSupported else { return }
     connection.videoOrientation = .portrait
     connection.isVideoMirrored = position == .back
+  
+    try? captureDevice.lockForConfiguration()
+    captureDevice.focusMode = .continuousAutoFocus
+    captureDevice.unlockForConfiguration()
   }
   
   private func selectCaptureDevice() -> AVCaptureDevice? {

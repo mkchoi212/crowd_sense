@@ -62,23 +62,24 @@ class ViewController: UIViewController, FrameExtractorDelegate {
   
   func captured(image: UIImage) {
     counter = counter + 1
-    
-    if (counter % 50 == 0) {
-      let imageData = UIImagePNGRepresentation(image)!
-    
-      Alamofire.upload(imageData, to: emotionsURL, method: .post, headers: header).responseJSON {response in
-        switch response.result {
-        case .success(let data):
-          self.emotionDict = Dictionary<String, Array<Float>>()
-          self.createEmotionDict(json: JSON(data))
-          break
-          
-        case .failure(let error):
-          print(error)
-          break
-        }
-      }
+    if (counter % 200 == 0) {
+      emotionDict = Dictionary<String, Array<Float>>()
+      let sections = image.subSections().flatMap{ UIImagePNGRepresentation($0) }
+      _ = sections.map(emotionAPICall)
     }
   }
+  
+  func emotionAPICall(imageData: Data) {
+//    Alamofire.upload(imageData, to: emotionsURL, method: .post, headers: header).responseJSON {response in
+//      switch response.result {
+//      case .success(let data):
+//        self.createEmotionDict(json: JSON(data))
+//        break
+//
+//      case .failure(let error):
+//        print(error)
+//        break
+//      }
+//    }
+  }
 }
-
