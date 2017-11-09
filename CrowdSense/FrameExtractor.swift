@@ -16,7 +16,7 @@ protocol FrameExtractorDelegate: class {
 
 class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
   
-  private let position = AVCaptureDevice.Position.back
+  private let position = AVCaptureDevice.Position.front
   private let quality = AVCaptureSession.Preset.high
   
   private var permissionGranted = false
@@ -75,10 +75,12 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     guard connection.isVideoOrientationSupported else { return }
     guard connection.isVideoMirroringSupported else { return }
     connection.videoOrientation = .portrait
-    connection.isVideoMirrored = position == .back
+    connection.isVideoMirrored = true
   
     try? captureDevice.lockForConfiguration()
-    captureDevice.focusMode = .continuousAutoFocus
+    if captureDevice.isFocusModeSupported(.continuousAutoFocus) {
+      captureDevice.focusMode = .continuousAutoFocus
+    }
     captureDevice.unlockForConfiguration()
   }
   
